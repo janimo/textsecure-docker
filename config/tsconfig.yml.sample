@@ -1,0 +1,56 @@
+twilio:
+  accountId: a
+  accountToken: a
+  number: 1
+  localDomain: a
+  international: false
+
+nexmo:
+  apiKey: a
+  apiSecret: a
+  number: 555555555555
+
+push:
+  host: "localhost"
+  port: 9090
+  username: "user"
+  password: "password"
+
+s3:
+  accessKey: a
+  accessSecret: a
+
+  # Name of the S3 bucket (needs to have been created)
+  # for attachments to go.  Should be configured with
+  # correct permissions.
+  attachmentsBucket: a
+
+memcache:
+  servers: 127.0.0.1:11211
+  user:
+  password:
+
+redis:
+  url: http://127.0.0.1:6379
+
+# Optional address of graphite server to report metrics
+graphite:
+  host:
+  port:
+
+database:
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: whisper
+
+  # the password
+  password: whisper
+
+  # the JDBC URL
+  url: jdbc:postgresql://localhost:5432/whisper
+
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8

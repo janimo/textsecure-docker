@@ -1,0 +1,24 @@
+gcm:
+  senderId: 111111111111
+  apiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+apn:
+  certificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
+  key: Ksflskdjfalsdkfjslkfslkfslkgslgkj
+
+redis:
+  url: http://127.0.0.1:6379
+
+authentication:
+  servers:
+  -  name: "user"
+     password: "password"
+
+server:
+    applicationConnectors:
+    - type: http
+      port: 9090
+    adminConnectors:
+    - type: http
+      port: 9091
+
