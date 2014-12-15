@@ -1,7 +1,7 @@
 # Open Whisper Systems TextSecure Server
 
 # Build the image with
-# docker build -rm -t whisper .
+# docker build --rm -t whisper .
 
 # Run the container in a directory containing the jar/ and config/ dirs
 # and the scripts referenced here
@@ -12,7 +12,8 @@ FROM ubuntu:14.10
 
 MAINTAINER Jani Monoses <jani@ubuntu.com>
 
-RUN /sbin/ip route | awk '/default/ { print "Acquire::http::Proxy \"http://"$3":8000\";" }' > /etc/apt/apt.conf.d/30proxy
+#Uncomment this if you want to use squid-deb-proxy from the host
+#RUN /sbin/ip route | awk '/default/ { print "Acquire::http::Proxy \"http://"$3":8000\";" }' > /etc/apt/apt.conf.d/30proxy
 
 RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y redis-server memcached postgresql openjdk-7-jre supervisor
 
