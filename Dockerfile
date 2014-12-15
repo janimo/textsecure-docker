@@ -15,7 +15,7 @@ MAINTAINER Jani Monoses <jani@ubuntu.com>
 #Uncomment this if you want to use squid-deb-proxy from the host
 #RUN /sbin/ip route | awk '/default/ { print "Acquire::http::Proxy \"http://"$3":8000\";" }' > /etc/apt/apt.conf.d/30proxy
 
-RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y redis-server memcached postgresql openjdk-7-jre supervisor
+RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y redis-server memcached postgresql openjdk-7-jre-headless supervisor
 
 RUN adduser --disabled-password --quiet --gecos Whisper whisper
 ENV HOME /home/whisper
