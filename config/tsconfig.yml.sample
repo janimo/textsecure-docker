@@ -30,7 +30,10 @@ memcache:
   user:
   password:
 
-redis:
+directory:
+  url: http://127.0.0.1:6379
+
+messageStore:
   url: http://127.0.0.1:6379
 
 # Optional address of graphite server to report metrics
