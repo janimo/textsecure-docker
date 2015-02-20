@@ -25,35 +25,22 @@ s3:
   # correct permissions.
   attachmentsBucket: a
 
-memcache:
-  servers: 127.0.0.1:11211
-  user:
-  password:
+cache:
+  url: http://127.0.0.1:6379
 
 directory:
   url: http://127.0.0.1:6379
 
 messageStore:
-  url: http://127.0.0.1:6379
-
-# Optional address of graphite server to report metrics
-graphite:
-  host:
-  port:
+  driverClass: org.postgresql.Driver
+  user: whisper
+  password: whisper
+  url: jdbc:postgresql://localhost:5432/messagedb
 
 database:
-  # the name of your JDBC driver
   driverClass: org.postgresql.Driver
-
-  # the username
   user: whisper
-
-  # the password
   password: whisper
-
-  # the JDBC URL
-  url: jdbc:postgresql://localhost:5432/whisper
-
-  # any properties specific to your JDBC driver:
+  url: jdbc:postgresql://localhost:5432/accountdb
   properties:
     charSet: UTF-8
