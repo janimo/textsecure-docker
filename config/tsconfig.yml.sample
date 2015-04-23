@@ -16,6 +16,10 @@ push:
   username: "user"
   password: "password"
 
+
+websocket:
+        enabled: true
+
 s3:
   accessKey: a
   accessSecret: a

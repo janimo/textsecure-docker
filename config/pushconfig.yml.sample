@@ -3,8 +3,10 @@ gcm:
   apiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 apn:
-  certificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
-  key: Ksflskdjfalsdkfjslkfslkfslkgslgkj
+  pushCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
+  pushKey: Ksflskdjfalsdkfjslkfslkfslkgslgkj
+  voipCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
+  voipKey: Ksflskdjfalsdkfjslkfslkfslkgslgkj
 
 redis:
   url: http://127.0.0.1:6379
