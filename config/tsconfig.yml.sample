@@ -16,6 +16,19 @@ push:
   username: "user"
   password: "password"
 
+server:
+  applicationConnectors:
+    - type: https
+      port: 8080
+      keyStorePath: config/example.keystore
+      keyStorePassword: example
+      validateCerts: false
+  adminConnectors:
+    - type: https
+      port: 8081
+      keyStorePath: config/example.keystore
+      keyStorePassword: example
+      validateCerts: false
 
 websocket:
         enabled: true
