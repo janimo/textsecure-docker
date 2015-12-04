@@ -1,14 +1,8 @@
 twilio:
   accountId: a
   accountToken: a
-  number: 1
+  numbers: [1]
   localDomain: a
-  international: false
-
-nexmo:
-  apiKey: a
-  apiSecret: a
-  number: 555555555555
 
 push:
   host: "localhost"

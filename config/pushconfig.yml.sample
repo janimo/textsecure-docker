@@ -1,6 +1,7 @@
 gcm:
   senderId: 111111111111
   apiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  redphoneApiKey: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 apn:
   pushCertificate: Cdsjalfksjdlfkjsdlfksdlfkjsdfkjas
