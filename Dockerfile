@@ -8,11 +8,11 @@
 #
 # docker run -p 8080:8080 -p 8081:8081 -P -v $(pwd):/home/whisper -it whisper
 
-FROM ubuntu:14.10
+FROM ubuntu:15.10
 
 MAINTAINER Jani Monoses <jani@ubuntu.com>
 
-RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y redis-server postgresql openjdk-7-jre-headless supervisor
+RUN DEBIAN_FRONTEND='noninteractive' apt-get update && apt-get install -y sudo redis-server postgresql openjdk-7-jre-headless supervisor
 
 RUN adduser --disabled-password --quiet --gecos Whisper whisper
 ENV HOME /home/whisper
